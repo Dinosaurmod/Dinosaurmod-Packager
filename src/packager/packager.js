@@ -1358,7 +1358,7 @@ cd "$(dirname "$0")"
 
       ${this.options.controls.greenFlag.enabled ? `
       const greenFlagButton = document.createElement('img');
-      greenFlagButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.63 17.5"><path d="M.75 2a6.44 6.44 0 017.69 0h0a6.44 6.44 0 007.69 0v10.4a6.44 6.44 0 01-7.69 0h0a6.44 6.44 0 00-7.69 0" fill="#007AF4" stroke="#003080" stroke-linecap="round" stroke-linejoin="round"/><path stroke-width="1.5" fill="#007AF4" stroke="#003080" stroke-linecap="round" stroke-linejoin="round" d="M.75 16.75v-16"/></svg>');
+      greenFlagButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46.6" height="52" viewBox="0,0,46.6,52"><g transform="translate(-216.7,-154)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#5fbf00" fill-rule="nonzero" stroke="#4b9700" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M262.3,160.6v25.2c0,0.5 -0.2,1 -0.6,1.2c-3.2,2.8 -7.2,4.2 -11.3,4.2c-4.1,0 -8.1,-1.5 -11.3,-4.2c-2.6,-2.2 -5.8,-3.5 -9.2,-3.5c-3.1,0 -6.1,1 -8.6,3v16.7c0,1 -0.8,1.8 -1.8,1.8c-1,0 -1.8,-0.8 -1.8,-1.8v-42.6c0,-0.8 0.5,-1.3 1,-1.6c3.2,-2.6 7,-4 11,-4c4.1,0 8.2,1.5 11.4,4.2c2.6,2.2 5.8,3.4 9.2,3.4c3.4,0 6.6,-1.2 9.2,-3.4c0.6,-0.4 1.3,-0.5 1.9,-0.2c0.6,0.3 0.9,0.9 0.9,1.6z"/></g></g></svg>');
       greenFlagButton.className = 'control-button green-flag-button';
       greenFlagButton.draggable = false;
       greenFlagButton.addEventListener('click', () => {
@@ -1374,7 +1374,7 @@ cd "$(dirname "$0")"
         element: greenFlagButton,
         where: 'top-left'
       });` : ''}
-
+x
       ${this.options.controls.pause.enabled ? `
       const pauseButton = document.createElement('img');
       pauseButton.className = 'control-button pause-button';
@@ -1386,9 +1386,9 @@ cd "$(dirname "$0")"
       const updatePause = (_isPaused) => {
         isPaused = _isPaused;
         if (isPaused) {
-          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="16" height="16" viewBox="0 0 4.2333332 4.2333335" xmlns="http://www.w3.org/2000/svg"><path d="m3.95163484 2.02835365-1.66643921.9621191-1.66643913.96211911V.10411543l1.66643922.9621191z" fill="#ffae00"/></svg>');
+          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48.09552" height="53.21206" viewBox="0,0,48.09552,53.21206"><g transform="translate(-216.36544,-153.40975)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#8dff00" fill-rule="nonzero" stroke="#5cbd00" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M217.36544,204.90999v-49.81998l45.0296,24.43095z"/></g></g></svg>');
         } else {
-          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg width="16" height="16" viewBox="0 0 4.2333332 4.2333335" xmlns="http://www.w3.org/2000/svg"><g fill="#ffae00"><path d="M.389.19239126h1.2631972v3.8485508H.389zM2.5810001.19239126h1.2631972v3.8485508H2.5810001z"/></g></svg>');
+          pauseButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.26912" height="51.81999" viewBox="0,0,47.26912,51.81999"><g transform="translate(-216.36544,-154.09)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#ffd000" fill-rule="nonzero" stroke="#bc9000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M217.36544,204.90999v-49.81998h16.52682v49.81998z"/><path d="M246.10774,204.90998v-49.81998h16.52682v49.81999z"/></g></g></svg>');
         }
       }
       vm.on('P4_PAUSE', updatePause);
@@ -1400,7 +1400,7 @@ cd "$(dirname "$0")"
 
       ${this.options.controls.stopAll.enabled ? `
       const stopAllButton = document.createElement('img');
-      stopAllButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><path fill="#ec5959" stroke="#b84848" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M4.3.5h5.4l3.8 3.8v5.4l-3.8 3.8H4.3L.5 9.7V4.3z"/></svg>');
+      stopAllButton.src = 'data:image/svg+xml,' + encodeURIComponent('<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0,0,52,52"><g transform="translate(-214,-154)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#ec503b" fill-rule="nonzero" stroke="#b83e2e" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M229.6,205l-14.6,-14.6v-20.8l14.6,-14.6h20.7l14.7,14.6v20.7l-14.6,14.7z"/></g></g></svg>');
       stopAllButton.className = 'control-button stop-all-button';
       stopAllButton.draggable = false;
       stopAllButton.addEventListener('click', () => {
