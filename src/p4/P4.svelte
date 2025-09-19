@@ -11,7 +11,6 @@
   import News from './News.svelte';
   import {progress, theme, error} from './stores';
   import {isSupported, isSafari, isStandalone, version} from './environment';
-  import {never} from './uselessutils';
   import {
     APP_NAME,
     FEEDBACK_PRIMARY,
@@ -181,15 +180,13 @@
     <News />
   {/if}
 
-  {#if never}
-    {#if isSupported}
-      <SelectProject bind:projectData />
-    {:else}
-      <Section accent="#4C97FF">
-        <h2>{$_('p4.browserNotSupported')}</h2>
-        <p>{$_('p4.browserNotSupportedDescription')}</p>
-      </Section>
-    {/if}
+  {#if isSupported}
+    <SelectProject bind:projectData />
+  {:else}
+    <Section accent="#4C97FF">
+      <h2>{$_('p4.browserNotSupported')}</h2>
+      <p>{$_('p4.browserNotSupportedDescription')}</p>
+    </Section>
   {/if}
 
   {#if projectData}
