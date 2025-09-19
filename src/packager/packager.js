@@ -1374,7 +1374,7 @@ cd "$(dirname "$0")"
         element: greenFlagButton,
         where: 'top-left'
       });` : ''}
-x
+
       ${this.options.controls.pause.enabled ? `
       const pauseButton = document.createElement('img');
       pauseButton.className = 'control-button pause-button';
