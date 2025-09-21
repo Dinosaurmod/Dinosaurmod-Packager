@@ -1269,11 +1269,7 @@ cd "$(dirname "$0")"
 
   ${!this.options.autoplay ? `<div id="launch" class="screen" hidden title="Click to start">
     <div class="green-flag">
-      <svg viewBox="0 0 16.63 17.5" width="42" height="44">
-        <defs><style>.cls-1,.cls-2{fill:#007AF4;stroke:#003080;stroke-linecap:round;stroke-linejoin:round;}.cls-2{stroke-width:1.5px;}</style></defs>
-        <path class="cls-1" d="M.75,2A6.44,6.44,0,0,1,8.44,2h0a6.44,6.44,0,0,0,7.69,0V12.4a6.44,6.44,0,0,1-7.69,0h0a6.44,6.44,0,0,0-7.69,0"/>
-        <line class="cls-2" x1="0.75" y1="16.75" x2="0.75" y2="0.75"/>
-      </svg>
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46.6" height="52" viewBox="0,0,46.6,52"><g transform="translate(-216.7,-154)"><g data-paper-data="{&quot;isPaintingLayer&quot;:true}" fill="#5fbf00" fill-rule="nonzero" stroke="#4b9700" stroke-width="2" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" style="mix-blend-mode: normal"><path d="M262.3,160.6v25.2c0,0.5 -0.2,1 -0.6,1.2c-3.2,2.8 -7.2,4.2 -11.3,4.2c-4.1,0 -8.1,-1.5 -11.3,-4.2c-2.6,-2.2 -5.8,-3.5 -9.2,-3.5c-3.1,0 -6.1,1 -8.6,3v16.7c0,1 -0.8,1.8 -1.8,1.8c-1,0 -1.8,-0.8 -1.8,-1.8v-42.6c0,-0.8 0.5,-1.3 1,-1.6c3.2,-2.6 7,-4 11,-4c4.1,0 8.2,1.5 11.4,4.2c2.6,2.2 5.8,3.4 9.2,3.4c3.4,0 6.6,-1.2 9.2,-3.4c0.6,-0.4 1.3,-0.5 1.9,-0.2c0.6,0.3 0.9,0.9 0.9,1.6z"/></g></g></svg>
     </div>
   </div>` : `` }
 
